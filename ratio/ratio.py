@@ -107,6 +107,17 @@ if __name__ == '__main__':
     horatio3 = Ratio(7, 7*holy_number, 6.4)
     horatio3.give_me_stats(xp)
 
+    xp=1e6
+    ratio1 = Ratio(1, holy_number, 2/3)
+    print('This is the proposed ratio ')
+    ratio1.give_me_stats(xp)
+    print('\nThis is your ratio')
+    ratio2 = meta_ratio
+    ratio2.give_me_stats(xp)
+    print('\nThese are the gains for the three speeds between the proposed ratio and your ratio')
+    print_compare_ratio_stats(ratio1.give_me_stats(xp, to_print=False), ratio2.give_me_stats(xp, to_print=False))
+
+
 
 
     xp = 2.4e6
