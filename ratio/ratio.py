@@ -9,6 +9,7 @@ import numpy as np
 
 ORDER_PRINT = ['NGU speed', 'Beard speed', 'Advanced Training']
 
+
 class Ratio:
     def __init__(self, power, cap, bars):
         self.ratio_power = power
